@@ -24,10 +24,17 @@ an acqusitions system, and circulation (issues, returns, and
 reserves). Circulation is handled with a full screen curses interface
 or a Web-based interface, and the rest of the system is Web-based.
 
+%description -l pl
+Koha to system zarz±dzania bibliotekami i kolekcjami. Zosta³
+zaprojektowany do zarz±dzania fizycznymi kolekcjami przedmiotów
+(ksi±¿ek, p³yt CD, no¶ników wideo, odno¶ników itp.). Pozwala na
+katalogowanie, przeszukiwanie, zarz±dzanie cz³onkami/opiekunami,
+systemem akwizycji i obiegu (wyj¶cia, powroty i rezerwacje). Obieg
+jest obs³ugiwany przez pe³noekranowy interfejs oparty o curses lub
+WWW, a reszta systemu jest oparta o WWW.
+
 %prep
 %setup -q
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -59,8 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog* Hints TODO README sampledata-1.2.gz docs/manual koha.mysql
-%attr(640,root,httpd) %config(noreplace) %{_sysconfdir}/koha.conf
-%attr(770,root,httpd) %dir /var/log/koha/
+%attr(640,root,httpd) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/koha.conf
+%attr(770,root,httpd) %dir /var/log/koha
 %attr(770,root,httpd) %dir %{_opacdir}
 %attr(770,root,httpd) %dir %{_opacdir}/cgi-bin
 %attr(770,root,httpd) %dir %{_opacdir}/htdocs
