@@ -8,10 +8,10 @@ Version:	1.2.2
 Release:	0.2
 License:	GPL v2
 Group:		Networking/Utilities
-Source0:	http://www.koha.org/download/files/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/koha/%{name}-%{version}.tar.gz
 # Source0-md5:	9c647fd64129e86b20bf38ab03a65716
-BuildRequires:	rpm-perlprov
 URL:		http://www.koha.org/
+BuildRequires:	rpm-perlprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_kohadir	/home/services/httpd/html/koha/intranet
