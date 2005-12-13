@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog* Hints TODO README sampledata-1.2.gz docs/manual koha.mysql
-%attr(640,root,httpd) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/koha.conf
+%attr(640,root,httpd) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/koha.conf
 %attr(770,root,httpd) %dir /var/log/koha
 %attr(770,root,httpd) %dir %{_opacdir}
 %attr(770,root,httpd) %dir %{_opacdir}/cgi-bin
