@@ -4,12 +4,12 @@
 Summary:	A library and collection management system
 Summary(pl):	System zarz±dzania bibliotekami i kolekcjami
 Name:		koha
-Version:	1.2.2
-Release:	0.2
+Version:	2.2.4
+Release:	0.1
 License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/koha/%{name}-%{version}.tar.gz
-# Source0-md5:	9c647fd64129e86b20bf38ab03a65716
+# Source0-md5:	68ec84cea8975f615722140dc25b3027
 URL:		http://www.koha.org/
 BuildRequires:	rpm-perlprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog* Hints TODO README sampledata-1.2.gz docs/manual koha.mysql
+%doc ChangeLog* Hints TODO README koha.mysql
 %attr(640,root,httpd) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/koha.conf
 %attr(770,root,httpd) %dir /var/log/koha
 %attr(770,root,httpd) %dir %{_opacdir}
