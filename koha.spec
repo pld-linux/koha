@@ -2,7 +2,7 @@
 # - include apache configuration
 %include	/usr/lib/rpm/macros.perl
 Summary:	A library and collection management system
-Summary(pl):	System zarz±dzania bibliotekami i kolekcjami
+Summary(pl.UTF-8):   System zarzƒÖdzania bibliotekami i kolekcjami
 Name:		koha
 Version:	2.2.4
 Release:	0.1
@@ -25,13 +25,13 @@ an acqusitions system, and circulation (issues, returns, and
 reserves). Circulation is handled with a full screen curses interface
 or a Web-based interface, and the rest of the system is Web-based.
 
-%description -l pl
-Koha to system zarz±dzania bibliotekami i kolekcjami. Zosta≥
-zaprojektowany do zarz±dzania fizycznymi kolekcjami przedmiotÛw
-(ksi±øek, p≥yt CD, no∂nikÛw wideo, odno∂nikÛw itp.). Pozwala na
-katalogowanie, przeszukiwanie, zarz±dzanie cz≥onkami/opiekunami,
-systemem akwizycji i obiegu (wyj∂cia, powroty i rezerwacje). Obieg
-jest obs≥ugiwany przez pe≥noekranowy interfejs oparty o curses lub
+%description -l pl.UTF-8
+Koha to system zarzƒÖdzania bibliotekami i kolekcjami. Zosta≈Ç
+zaprojektowany do zarzƒÖdzania fizycznymi kolekcjami przedmiot√≥w
+(ksiƒÖ≈ºek, p≈Çyt CD, no≈õnik√≥w wideo, odno≈õnik√≥w itp.). Pozwala na
+katalogowanie, przeszukiwanie, zarzƒÖdzanie cz≈Çonkami/opiekunami,
+systemem akwizycji i obiegu (wyj≈õcia, powroty i rezerwacje). Obieg
+jest obs≈Çugiwany przez pe≈Çnoekranowy interfejs oparty o curses lub
 WWW, a reszta systemu jest oparta o WWW.
 
 %prep
