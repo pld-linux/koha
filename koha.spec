@@ -2,7 +2,7 @@
 # - include apache configuration
 %include	/usr/lib/rpm/macros.perl
 Summary:	A library and collection management system
-Summary(pl.UTF-8):   System zarządzania bibliotekami i kolekcjami
+Summary(pl.UTF-8):	System zarządzania bibliotekami i kolekcjami
 Name:		koha
 Version:	2.2.4
 Release:	0.1
